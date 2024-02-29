@@ -1,0 +1,17 @@
+README
+setup.py
+TSRCNN/__init__.py
+TSRCNN/main.py
+TSRCNN.egg-info/PKG-INFO
+TSRCNN.egg-info/SOURCES.txt
+TSRCNN.egg-info/dependency_links.txt
+TSRCNN.egg-info/top_level.txt
+TSRCNN/deeptextures/__init__.py
+TSRCNN/deeptextures/utilsFolder/__init__.py
+TSRCNN/deeptextures/utilsFolder/loss.py
+TSRCNN/deeptextures/utilsFolder/models.py
+TSRCNN/deeptextures/utilsFolder/utils.py
+TSRCNN/generatetextures/__init__.py
+TSRCNN/generatetextures/main.py
+TSRCNN/generatetextures/utils/__init__.py
+TSRCNN/generatetextures/utils/generate.py

@@ -1,0 +1,25 @@
+TSRCNN : Texture Synthesis with Rotation using CNN
+We improved the existing CNN texture synthesis technique by rotating the texture image to provide directionality.
+
+How to use :
+
+generateTSR(image, rotateNum=8, outputScale=2, generateRotation = True, resultNameRotate="resultTextureImg", resultSave=False,
+            Patch_before_limit=False, Patch_before_scale=120)
+
+param image: 이미지 경로 - 필수 입력 (ex)"절대경로")
+
+param rotateNum: 360도(중심 기준)/n 만큼 회전시켜 총 n 개의 회전 예제 텍스처를 생성 (n=8개)
+
+param outputScale: 결과 이미지 사이즈 얼마나 배로 늘릴것인가 (2배)
+
+param generateRotation: 회전 예제 이미지를 생성할것인가? (True) - False 일 경우 기존 회전 예제 이미지 사용할 것을 대비.
+
+param resultNameRotate: 저장할 결과 이름 ("resultTextureImg"+".png")
+
+param resultSave: 결과를 저장할 것인가? (False)
+
+param Patch_before_limit: 초기 이미지 크기 제한 여부 (Flase) - 가로세로 길이가 모두 제한크기 이상 넘어갈 경우 제한크기로 크기조절
+
+param Patch_before_scale: 초기 이미지 제한 크기 (120픽셀) - 클수록 합성 시간 오래 걸림
+
+return: PIL image - Texture Synthesis result
